@@ -69,9 +69,21 @@ if(pets > friendsPets) {
   mostPets = pets || friendsPets;
   console.log(mostPets)
 }
-
-
-
 // 17 - Rewrite question 16 with a `switch` statement. You'll need to do research!
+let mostPets2;
+switch (mostPets) {
+  case  pets > friendsPets:
+   mostPets2 = pets;
+    console.log(mostPets2);
+  break;
+  case pets < friendsPets:
+   mostPets2 = friendsPets;
+    console.log(mostPets2);
+  break;
+  case pets === friendsPets:
+   mostPets2 = pets;
+    console.log(mostPets2)
 
+}
 // 18 -- Rewrite question 13 with a `ternary` operator. You'll need to do research!
+adventurous === true ? console.log("Adventures are great") : console.log("How about we stay home?");
