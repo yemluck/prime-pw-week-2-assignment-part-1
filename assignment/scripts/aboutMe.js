@@ -19,9 +19,9 @@ let adventurous = true;
 // 8 - Create a variable named `food`, and set its value to a string of your favorite food
 let food = "rice";
 // 9 - Create a variable called `pets` and set it to the value of the number of pets you have
-let pets = 2;
+let pets = 4;
 // 10 - Create a variable called `friendsPets` and assign it the value of the number of pets your friend has
-let friendsPets = 5;
+let friendsPets = 4;
 // 11 - Add two pets to your `pets` variable
 pets += 2;
 // 12 - Create a constant variable called `allowedPets` and set it to a number value of your choice
@@ -71,19 +71,15 @@ if(pets > friendsPets) {
 }
 // 17 - Rewrite question 16 with a `switch` statement. You'll need to do research!
 let mostPets2;
-switch (mostPets) {
-  case  pets > friendsPets:
+switch (pets >= friendsPets) {
+  case  true:
    mostPets2 = pets;
-    console.log(mostPets2);
+    console.log(mostPets2); //string to know which line runs
   break;
-  case pets < friendsPets:
+  case false:
    mostPets2 = friendsPets;
     console.log(mostPets2);
   break;
-  case pets === friendsPets:
-   mostPets2 = pets;
-    console.log(mostPets2)
-
 }
 // 18 -- Rewrite question 13 with a `ternary` operator. You'll need to do research!
 adventurous === true ? console.log("Adventures are great") : console.log("How about we stay home?");
