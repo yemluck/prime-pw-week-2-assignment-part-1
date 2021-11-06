@@ -19,9 +19,9 @@ let adventurous = true;
 // 8 - Create a variable named `food`, and set its value to a string of your favorite food
 let food = "rice";
 // 9 - Create a variable called `pets` and set it to the value of the number of pets you have
-let pets = 0;
+let pets = 2;
 // 10 - Create a variable called `friendsPets` and assign it the value of the number of pets your friend has
-let friendsPets = 3;
+let friendsPets = 5;
 // 11 - Add two pets to your `pets` variable
 pets += 2;
 // 12 - Create a constant variable called `allowedPets` and set it to a number value of your choice
@@ -58,13 +58,18 @@ if(pets < allowedPets){
 // assigns the highest value to `mostPets`. There's several possibilities --
 // be sure to think through all the scenarios.
 // console.log `mostPets` after the conditional has run.
-let mostPets = pets || friendsPets
-if (pets >= friendsPets){
-  mostPets === pets;
-} else if (pets <= friendsPets){
-  mostPets === friendsPets;
+let mostPets;
+if(pets > friendsPets) {
+  mostPets = pets;
+  console.log(mostPets)
+} else if (pets < friendsPets) {
+  mostPets = friendsPets;
+  console.log(mostPets);
+} else {
+  mostPets = pets || friendsPets;
+  console.log(mostPets)
 }
-console.log(mostPets);
+
 
 
 // 17 - Rewrite question 16 with a `switch` statement. You'll need to do research!
