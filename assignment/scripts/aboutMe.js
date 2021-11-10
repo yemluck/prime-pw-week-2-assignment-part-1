@@ -28,14 +28,14 @@ pets += 2;
 const allowedPets = 5;
 // 13 - Create a conditional: if adventurous is true, console log "Adventures are great!",
 // if it's not true, console log "How about we stay home?"
-if(adventurous == true){
+if(adventurous){
   console.log("Adventures are great");
 } else {
   console.log("How about we stay home?");
 }
 // 14 - Create a compound conditional: if luckyNumber is 2 and adventurous is true,
 // console log "Roll the dice!"
-if(luckyNumber ===2 && adventurous === true){
+if(luckyNumber ===2 && adventurous){
   console.log("Roll the dice!");
 }
 // 15 - Write a conditional that console logs "I can have more pets!"
@@ -45,7 +45,7 @@ if(luckyNumber ===2 && adventurous === true){
 // if the value of `pets` is greater than the value of `allowedPets`.
 if(pets < allowedPets){
   console.log("I can have more pets!");
-} else if (pets == allowedPets) {
+} else if (pets === allowedPets) {
   console.log("I have enough pets");
 } else { // I feel like else would cover the third scenario
   console.log("Oh no, I have too many pets!");
@@ -70,16 +70,16 @@ if(pets > friendsPets) {
   console.log(mostPets);
 }
 // 17 - Rewrite question 16 with a `switch` statement. You'll need to do research!
-let mostPets2;
+mostPets;
 switch (pets >= friendsPets) {
   case  true:
-   mostPets2 = pets;
-    console.log(mostPets2); //string to know which line runs
+   mostPets = pets;
+    console.log(mostPets);
   break;
   case false:
-   mostPets2 = friendsPets;
-    console.log(mostPets2);
+   mostPets = friendsPets;
+    console.log(mostPets);
   break;
 }
 // 18 -- Rewrite question 13 with a `ternary` operator. You'll need to do research!
-adventurous === true ? console.log("Adventures are great") : console.log("How about we stay home?");
+adventurous ? console.log("Adventures are great") : console.log("How about we stay home?");
